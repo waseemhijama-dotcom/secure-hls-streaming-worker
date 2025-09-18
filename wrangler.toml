@@ -1,0 +1,29 @@
+[env.development]
+name = "secure-hls-streaming-dev"
+main = "src/worker.js"
+compatibility_date = "2025-09-17"
+
+# Environment variables (set these in Cloudflare dashboard or wrangler secrets)
+[env.development.vars]
+# These will be overridden by actual secrets in production
+FIREBASE_PROJECT_ID = "your-firebase-project-id"
+ACCOUNT_ID = "your-cloudflare-account-id"
+BUCKET_NAME = "cupping-care"
+SIGNED_URL_TTL_SECONDS = "900"  # 15 minutes default
+
+# Production environment
+[env.production]
+name = "secure-hls-streaming"
+main = "src/worker.js"
+compatibility_date = "2025-09-17"
+
+[env.production.vars]
+FIREBASE_PROJECT_ID = "your-firebase-project-id"
+ACCOUNT_ID = "your-cloudflare-account-id"
+BUCKET_NAME = "cupping-care"
+SIGNED_URL_TTL_SECONDS = "900"  # 15 minutes default
+
+# R2 bucket binding (optional - for direct R2 access)
+# [[env.production.r2_buckets]]
+# binding = "CUPPING_CARE_BUCKET"
+# bucket_name = "cupping-care"

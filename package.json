@@ -1,0 +1,24 @@
+{
+  "name": "secure-hls-streaming-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for secure HLS video streaming with Firebase auth and R2 signed URLs",
+  "main": "src/worker.js",
+  "scripts": {
+    "dev": "wrangler dev src/worker.js --port 5000 --host 0.0.0.0",
+    "deploy": "wrangler deploy src/worker.js",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "aws4fetch": "^1.0.18"
+  },
+  "devDependencies": {
+    "wrangler": "^4.38.0"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "hls",
+    "video-streaming",
+    "firebase-auth",
+    "r2-storage"
+  ]
+}
