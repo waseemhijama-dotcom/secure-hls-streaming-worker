@@ -1,7 +1,7 @@
 [env.development]
 name = "secure-hls-streaming-dev"
 main = "src/worker.js"
-compatibility_date = "2025-09-17"
+compatibility_date = "2022-07-12"
 
 # Environment variables (set these in Cloudflare dashboard or wrangler secrets)
 [env.development.vars]
