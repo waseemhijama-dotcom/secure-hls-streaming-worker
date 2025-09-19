@@ -4,8 +4,8 @@
   "description": "Cloudflare Worker for secure HLS video streaming with Firebase auth and R2 signed URLs",
   "main": "src/worker.js",
   "scripts": {
-    "dev": "wrangler dev src/worker.js --port 5000 --host 0.0.0.0",
-    "deploy": "wrangler deploy src/worker.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
     "tail": "wrangler tail"
   },
   "dependencies": {
