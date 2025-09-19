@@ -1,5 +1,5 @@
 {
-  "name": "secure-hls-streaming-worker",
+  "name": "cuppingcare",
   "version": "1.0.0",
   "description": "Cloudflare Worker for secure HLS video streaming with Firebase auth and R2 signed URLs",
   "main": "src/worker.js",
