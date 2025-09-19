@@ -1,3 +1,3 @@
-name = "secure-hls-streaming"
+name = "cuppingcare"
 main = "src/worker.js"
 compatibility_date = "2025-09-19"
